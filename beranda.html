@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aplikasi Rental Mobil</title>
+  <!-- Bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+  footer a {
+    color: #ffffff;
+  }
+  footer a:hover {
+    color: #dbeafe;
+    text-decoration: underline;
+  }
+/* NAVBAR MENU MODERN */
+.navbar-nav .nav-link {
+  position: relative;
+  color: #ffffff !important;
+  margin-left: 12px;
+  padding: 6px 4px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+/* underline animation */
+.navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 3px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  transition: width 0.3s ease;
+}
+
+/* hover */
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
+}
+
+/* active menu */
+.navbar-nav .nav-link.active::after {
+  width: 100%;
+}
+
+/* LOGIN BUTTON */
+.navbar-nav .nav-link.login-btn {
+  background-color: #ffffff;
+  color: #0d6efd !important;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+.navbar-nav .nav-link.login-btn:hover {
+  background-color: #e7f1ff;
+}
+
+</style>
+
+</head>
+<body>
+
+  <!-- Header & Navigasi -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="ChatGPT Image Dec 26, 2025, 07_33_45 AM.png" alt="Logo" width="40" height="40" class="d-inline-block align-text-top">
+          Rental Mobil
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+  <li class="nav-item">
+    <a class="nav-link active" href="#beranda">Beranda</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="transaksi.html">Transaksi</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#profil">Profil</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link login-btn ms-lg-3" href="login.html">Login</a>
+  </li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container my-4">
+
+    <!-- Halaman Beranda -->
+    <section id="beranda" class="mb-5">
+      <h2>Beranda</h2>
+      <div class="card p-3">
+        <p>Langkah singkat menggunakan aplikasi:</p>
+        <ol>
+          <li>Login terlebih dahulu.</li>
+          <li>Pilih menu Transaksi untuk input penyewaan mobil.</li>
+          <li>Cek daftar transaksi untuk melihat riwayat penyewaan.</li>
+          <li>Lihat Profil untuk informasi aplikasi.</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Halaman Profil -->
+<section id="profil" class="mb-5">
+  <h2>Profil</h2>
+  <div class="card p-4">
+    <div class="row align-items-center">
+
+      <!-- Gambar Mobil -->
+      <div class="col-md-5 mb-3 text-center">
+        <img src="WhatsApp Image 2025-10-09 at 09.49.10.jpeg"
+             class="img-fluid rounded shadow"
+             alt="Mobil Rental">
+      </div>
+
+      <!-- Deskripsi -->
+      <div class="col-md-7">
+        <h4>Aplikasi Rental Mobil</h4>
+        <p>
+          Aplikasi Rental Mobil adalah sistem sederhana yang digunakan untuk
+          mengelola penyewaan kendaraan secara digital. Aplikasi ini membantu
+          pengguna dalam mencatat transaksi, memilih jenis mobil, serta
+          memantau data penyewaan dengan mudah dan cepat.
+        </p>
+
+        <h5>Jenis Mobil yang Tersedia</h5>
+        <ul>
+          <li><strong>MPV</strong> – Cocok untuk keluarga, kapasitas besar dan nyaman.</li>
+          <li><strong>SUV</strong> – Tangguh untuk perjalanan jauh dan medan berat.</li>
+          <li><strong>City Car</strong> – Irit bahan bakar dan ideal untuk perkotaan.</li>
+        </ul>
+
+        <p class="mt-3 mb-1"><strong>Dibuat oleh:</strong> Muhamad Nurrohman</p>
+        <p class="mb-1"><strong>NIM:</strong> 251011700979</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <footer class="bg-primary text-light mt-5">
+  <div class="container py-4">
+    <div class="row">
+      
+      <!-- Tentang -->
+      <div class="col-md-4 mb-3">
+        <h5>Rental Mobil</h5>
+        <p class="small">
+          Aplikasi rental mobil sederhana untuk mengelola transaksi penyewaan kendaraan secara cepat dan mudah.
+        </p>
+      </div>
+
+      <!-- Menu -->
+      <div class="col-md-4 mb-3">
+        <h5>Menu</h5>
+        <ul class="list-unstyled">
+          <li><a href="#beranda" class="text-light text-decoration-none">Beranda</a></li>
+          <li><a href="#transaksi" class="text-light text-decoration-none">Transaksi</a></li>
+          <li><a href="#profil" class="text-light text-decoration-none">Profil</a></li>
+        </ul>
+      </div>
+
+      <!-- Kontak -->
+      <div class="col-md-4 mb-3">
+        <h5>Kontak</h5>
+        <p class="small mb-1">📍 Depok, Indonesia</p>
+        <p class="small mb-1">📧 mnurrohman09@gmail.com</p>
+        <p class="small mb-1">📞 0899-7751-315</p>
+      </div>
+
+    </div>
+    <hr class="border-secondary">
+    <div class="text-center small">
+      © 2025 Rental Mobil | Muhamad Nurrohman
+    </div>
+  </div>
+</footer>
+</body>
+</html>
